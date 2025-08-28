@@ -1,0 +1,254 @@
+
+QWidget{
+    background-color: rgb(35, 35, 35);  
+}
+
+/* ==== Home Screen ==== */
+
+QPushButton {
+    padding: 8px 12px;
+    min-height: 45px;
+    border-radius: 18px;
+    font-weight: bold;
+}
+
+QPushButton[kind="exercise"]{
+    min-width: 155px;
+    max-width: 195px;
+    border: 1px solid #777;
+    background: #777;
+    color: #eef6ff;
+    font-size: 16px;
+}
+
+QPushButton:hover[kind="exercise"]{
+    background: #666;
+}
+
+QPushButton:pressed[kind="exercise"]{
+    background: #444;
+}
+
+QPushButton[kind="confirm"] {
+    min-width: 120px;
+    max-width: 160px;
+    border: 1px solid rgb(217, 145, 0);
+    background: rgb(255, 176, 17);
+    color: rgb(35,35,35);
+    font-size: 18px;
+}
+
+QPushButton:hover[kind="confirm"] {
+    background: rgb(217,145,0);
+}
+
+QPushButton[kind="back"] {
+    min-height: 20px;
+    min-width: 40px;
+    max-width: 90px;
+    background: transparent;
+    border: transparent;
+    color: #3B8EEA;
+    font-weight: bold;   
+}
+
+QPushButton:hover[kind="back"] {
+    color: #2f65a3;
+}
+
+QLabel#overlayCard {
+    background: rgba(170, 170, 170, 70); 
+    color: rgb(22, 22, 22);
+    padding: 8px;
+    font-size: 16px;
+    font: "Arial"
+}
+
+QPushButton[selected="true"] {
+    border: 1px solid #333;
+    background: #444;
+}
+
+QLabel#labelTitle {
+    font-size: 50px;
+    font-weight: bold;
+    color: #eef6ff;
+}
+
+QLabel#labelChoose {
+    font-size: 16px;
+    color: #3B8EEA;
+    
+}
+
+QFrame#videoContainer {
+    background: #222;               
+    border: 2px solid #222;    
+    border-radius: 5px;          
+}
+
+/* ==== WORKOUT SCREEN ==== */
+
+QLabel#guideLabel {
+    font:"Arial";
+    font-size: 16px;
+    color: white;
+}
+
+QFrame#cameraContainer {
+    background: transparent;
+    border: 2px solid #444;
+    border-radius: 8px;
+}
+
+QFrame#demoContainer {
+    background: #222;
+    border: 1px solid #333;
+    border-radius: 8px;
+}
+
+QLabel#cameraView {
+    background: transparent;
+    border-radius: 8px; 
+}
+
+QLabel#tipsOverlay {
+    background-color: rgba(0,0,0,120);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+QLabel#stopReasonLabel {
+    background-color: rgba(232, 22, 22, 156);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 24px;
+}
+
+QLabel#playTitle {
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+    background-color: transparent;
+}
+
+QLabel#stopInstrLabel {
+    color: white;
+    font-size: 18px;
+    font-weight: normal;
+    background-color: transparent;
+    opacity: 0.9;
+}
+
+QPushButton#playButton {
+    background-color: rgb(84, 211, 253);
+    color: #111;
+    border: none;
+    border-radius: 40px;
+    font-size: 36px;
+    font-weight: 900;
+    padding: 0px;
+    min-width: 80px; min-height: 80px;
+    max-width: 80px; max-height: 80px;
+}
+
+QPushButton#playButton:hover {
+    background-color: rgb(65, 157, 188);
+}
+
+QPushButton#stopButton {
+    background-color: rgba(185, 44, 58, 0.95);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: normal;
+    min-width: 15px; min-height: 15px;
+    max-width: 15px; max-height: 15px;
+}
+
+QPushButton#stopButton:hover {
+    background-color: rgba(220, 53, 69, 1);
+}
+
+QLabel#startOverlay {
+    background-color: rgba(50, 50, 50, 180);
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    padding: 20px;
+}
+
+QLabel#tipsOverlay {
+    background-color: rgba(0,0,0,100);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 34px;
+    font-weight: bold;
+}
+
+QLabel#bottomBar {
+    background-color: rgba(0,0,0,100);
+    color: white;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+QLabel#feedbackPopup {
+    background-color: rgba(24, 122, 147, 220);
+    color: white;
+    padding: 10px 12px;
+    border-radius: 10px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+
+/* ==== RATING OVERLAY ==== */ 
+QWidget#ratingOverlay {
+    background-color: rgba(65, 122, 132, 160); 
+}
+
+QFrame#ratingPanel {
+    background-color: rgba(20, 20, 20, 230);
+    border-radius: 16px;
+}
+
+QLabel#evalTitle {
+    color: #3B8EEA;
+    font-size: 40px;
+    font-weight: 700;
+    background: transparent;
+}
+
+QLabel#star {
+    font-size: 60px;
+    color: gold;
+    background: transparent;     
+}
+
+QLabel#tips {
+    color: #eaeaea;
+    font-size: 16px;
+    background: transparent;  
+}
+
+QPushButton#closeBtn {
+    background-color: rgba(255,255,255,0.9);
+    color: #111;
+    border: none;
+    border-radius: 15px;
+    font-size: 18px;
+    min-width: 25px; min-height: 25px;
+}
+
+QPushButton#closeBtn:hover { 
+    background-color: white; 
+}
